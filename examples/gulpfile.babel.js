@@ -1,6 +1,7 @@
 import gulp from 'gulp'
-import _ from 'gulp-load-plugins'
-import errorNotifier from 'gulp-error-notifier'
+import plugins from 'gulp-load-plugins'
+//import errorNotifier from 'gulp-error-notifier'
+const _ = plugins()
 
 gulp.task('jade', () => {
 	gulp.src('src/*.jade')
