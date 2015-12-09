@@ -13,9 +13,9 @@ var errorNotifier = require('gulp-error-notifier');
 var jade = require('gulp-jade');
 
 gulp.src('./src/*.jade')
-	.pipe(errorNotifier())
-	.pipe(jade())
-	.pipe(gulp.dest('./dist'));
+    .pipe(errorNotifier())
+    .pipe(jade())
+    .pipe(gulp.dest('./dist'));
 ```
 
 ## API
@@ -39,8 +39,8 @@ var errorNotifier = require('gulp-error-notifier')
 var sass = require('gulp-sass');
 
 gulp.src('./src/*.scss')
-	.pipe(errorNotifier.handleError(sass()))
-	.pipe(gulp.dest('./dist'));
+    .pipe(errorNotifier.handleError(sass()))
+    .pipe(gulp.dest('./dist'));
 ```
 ## Examples
 For detailed executable examples look at  [`examples/gulpfile.babel.js`](https://github.com/feradjs/gulp-error-notifier/blob/master/examples/gulpfile.babel.js).
