@@ -20,5 +20,21 @@ gulp.src('./src/**/*.jade')
 
 ## API
 
+###  errorNotifier()
+Returns [plumbed](https://github.com/floatdrop/gulp-plumber) stream with [`notify`](#errornotifiernotifyerror) as [`errorHandler`](https://github.com/floatdrop/gulp-plumber#optionserrorhandler).
+
+### errorNotifier.notify(error)
+Logs `error` to console and displays `error` notification.
+```javascript
+var errorNotifier = require('gulp-error-notifier')
+var fs = require('fs')
+
+try {
+	var data = fs.readFileSync('data', 'utf-8')
+} catch (error) {
+	errorNotifier.notify(error)
+}
+```
+
 ## License
 [MIT License](https://en.wikipedia.org/wiki/MIT_License)
