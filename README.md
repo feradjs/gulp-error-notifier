@@ -1,5 +1,5 @@
 # gulp-error-notifier
-Notify about errors from gulp plugins and streams
+Notify about errors from gulp plugins and streams with [node-notifier](https://github.com/mikaelbr/node-notifier)
 
 ## Install
 ```shell
