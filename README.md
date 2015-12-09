@@ -1,4 +1,5 @@
 # gulp-error-notifier
+[![NPM version][npm-url]][npm-image]
 Notify about errors from gulp plugins and streams via desktop notifications of [node-notifier](https://github.com/mikaelbr/node-notifier).
 
 ## Install
@@ -53,3 +54,6 @@ gulp example # run specific example
 
 ## License
 [MIT License](https://en.wikipedia.org/wiki/MIT_License)
+
+[npm-url]: https://npmjs.org/package/gulp-error-notifier
+[npm-image]: https://img.shields.io/npm/v/gulp-error-notifier.svg
