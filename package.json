@@ -12,5 +12,10 @@
     "notify"
   ],
   "author": "Taras Serdyuk <taras@techburg.io>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gulp-plumber": "^1.0.1",
+    "gulp-util": "^3.0.7",
+    "node-notifier": "^4.4.0"
+  }
 }
