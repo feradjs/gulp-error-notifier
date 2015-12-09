@@ -1,0 +1,26 @@
+{
+  "name": "gulp-error-notifier",
+  "version": "1.0.0",
+  "description": "Notify about errors from gulp plugins and streams",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "babel -w src -d dist",
+    "prepublish": "rm -rf dist && babel src -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "error",
+    "notify"
+  ],
+  "author": "Taras Serdyuk <taras@techburg.io>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-plumber": "^1.0.1",
+    "gulp-util": "^3.0.7",
+    "node-notifier": "^4.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.3.15"
+  }
+}
