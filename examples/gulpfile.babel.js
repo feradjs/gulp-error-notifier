@@ -1,6 +1,6 @@
 import gulp from 'gulp'
 import plugins from 'gulp-load-plugins'
-import errorNotifier, { handle } from 'gulp-error-notifier'
+import errorNotifier, { handleError } from 'gulp-error-notifier'
 const _ = plugins()
 
 setTimeout(() => console.log('done'), 5000)
@@ -46,7 +46,7 @@ gulp.task('sass-log', () => {
 
 gulp.task('sass-notify', () => {
 	gulp.src('src/*.scss')
-		.pipe(handle(_.sass()))
+		.pipe(handleError(_.sass()))
 		.pipe(gulp.dest('dist'))
 })
 

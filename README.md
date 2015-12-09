@@ -36,7 +36,7 @@ try {
 }
 ```
 
-### errorNotifier.handle(stream)
+### errorNotifier.handleError(stream)
 Notifies on `stream` `'error'` event and stops it from further executing.
 ```javascript
 var gulp = require('gulp');
@@ -44,7 +44,7 @@ var errorNotifier = require('gulp-error-notifier')
 var sass = require('gulp-sass');
 
 gulp.src('./sass/**/*.scss')
-	.pipe(errorNotifier.handle(sass()))
+	.pipe(errorNotifier.handleError(sass()))
 	.pipe(gulp.dest('./style.css'));
 ```
 ## Examples
