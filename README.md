@@ -12,7 +12,7 @@ var gulp = require('gulp');
 var errorNotifier = require('gulp-error-notifier');
 var jade = require('gulp-jade');
 
-gulp.src('./src/**/*.jade')
+gulp.src('./jade/**/*.jade')
 	.pipe(errorNotifier())
 	.pipe(jade())
 	.pipe(gulp.dest('./dist'));
@@ -26,14 +26,26 @@ Returns [plumbed](https://github.com/floatdrop/gulp-plumber) stream with [`notif
 ### errorNotifier.notify(error)
 Logs `error` to console and displays `error` notification.
 ```javascript
-var errorNotifier = require('gulp-error-notifier')
-var fs = require('fs')
+var errorNotifier = require('gulp-error-notifier');
+var fs = require('fs');
 
 try {
-	var data = fs.readFileSync('data', 'utf-8')
+	var data = fs.readFileSync('data', 'utf-8');
 } catch (error) {
-	errorNotifier.notify(error)
+	errorNotifier.notify(error);
 }
+```
+
+### errorNotifier.handle(stream)
+Notifies on `stream` `'error'` event and stops it from further executing.
+```javascript
+var gulp = require('gulp');
+var errorNotifier = require('gulp-error-notifier')
+var sass = require('gulp-sass');
+
+gulp.src('./sass/**/*.scss')
+	.pipe(errorNotifier.handle(sass()))
+	.pipe(gulp.dest('./style.css'));
 ```
 
 ## License
