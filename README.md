@@ -1,5 +1,5 @@
 # gulp-error-notifier
-Notify about errors from gulp plugins and streams with [node-notifier](https://github.com/mikaelbr/node-notifier)
+Notify about errors from gulp plugins and streams with [node-notifier](https://github.com/mikaelbr/node-notifier).
 
 ## Install
 ```shell
@@ -46,6 +46,14 @@ var sass = require('gulp-sass');
 gulp.src('./sass/**/*.scss')
 	.pipe(errorNotifier.handle(sass()))
 	.pipe(gulp.dest('./style.css'));
+```
+## Examples
+For detailed executable examples look at  [`examples/gulpfile.js`](https://github.com/feradjs/gulp-error-notifier/blob/master/examples/gulpfile.js).
+```shell
+cd examples
+npm install
+gulp --tasks
+gulp example # run specific example
 ```
 
 ## License
