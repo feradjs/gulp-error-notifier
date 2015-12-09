@@ -11,8 +11,8 @@ export function notify(error) {
 	notifier.notify({ title: 'Error!', message: error.message })
 }
 
-export function handle(stream) {
-	return stream.on('error', (error) => {
+export function handleError(stream) {
+	return stream.on('error', function(error) {
 		notify(error)
 		this.emit('end')
 	})
