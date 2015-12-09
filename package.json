@@ -1,0 +1,16 @@
+{
+  "name": "gulp-error-notifier",
+  "version": "1.0.0",
+  "description": "Notify about errors from gulp plugins and streams",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "error",
+    "notify"
+  ],
+  "author": "Taras Serdyuk <taras@techburg.io>",
+  "license": "MIT"
+}
