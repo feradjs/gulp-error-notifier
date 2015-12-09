@@ -12,7 +12,7 @@ export function notify(error) {
 }
 
 export function handle(stream) {
-	return stream.on('error', (error) => {
+	return stream.on('error', function(error) {
 		notify(error)
 		this.emit('end')
 	})
