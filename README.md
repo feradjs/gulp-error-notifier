@@ -1,6 +1,6 @@
 # gulp-error-notifier
 [![NPM version][npm-url]][npm-image]
-Notify about errors from gulp plugins and streams via desktop notifications of [node-notifier](https://github.com/mikaelbr/node-notifier).
+Notify about errors from gulp plugins and streams via desktop notifications of [node-notifier].
 
 ## Install
 ```shell
@@ -22,7 +22,7 @@ gulp.src('./src/*.jade')
 ## API
 
 ###  errorNotifier()
-[Plumber](https://github.com/floatdrop/gulp-plumber) stream with [`notify`](#errornotifiernotifyerror) as [`errorHandler`](https://github.com/floatdrop/gulp-plumber#optionserrorhandler).
+[Plumber] stream with [`notify`](#errornotifiernotifyerror) as [`errorHandler`][plumber-handler].
 
 ### errorNotifier.notify(error)
 Logs `error` to console and displays `error` notification.
@@ -44,7 +44,7 @@ gulp.src('./src/*.scss')
     .pipe(gulp.dest('./dist'));
 ```
 ## Examples
-For detailed executable examples look at  [`examples/gulpfile.babel.js`](https://github.com/feradjs/gulp-error-notifier/blob/master/examples/gulpfile.babel.js).
+For detailed executable examples look at  [`examples/gulpfile.babel.js`][example-gulpfile].
 ```shell
 cd examples
 npm install
@@ -57,3 +57,10 @@ gulp example # run specific example
 
 [npm-url]: https://npmjs.org/package/gulp-error-notifier
 [npm-image]: https://img.shields.io/npm/v/gulp-error-notifier.svg
+
+[node-notifier]: https://github.com/mikaelbr/node-notifier
+
+[plumber]: https://github.com/floatdrop/gulp-plumber
+[plumber-handler]: https://github.com/floatdrop/gulp-plumber#optionserrorhandler
+
+[example-gulpfile]: https://github.com/feradjs/gulp-error-notifier/blob/master/examples/gulpfile.babel.js
