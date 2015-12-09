@@ -1,6 +1,6 @@
 import gulp from 'gulp'
 import plugins from 'gulp-load-plugins'
-//import errorNotifier from 'gulp-error-notifier'
+import errorNotifier from 'gulp-error-notifier'
 const _ = plugins()
 
 gulp.task('jade', () => {
