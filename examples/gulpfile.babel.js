@@ -19,6 +19,7 @@ gulp.task('jade-plumber', () => {
 gulp.task('jade-notify', () => {
 	gulp.src('src/*.jade')
 		.pipe(errorNotifier())
+		.pipe(_.jade())
 		.pipe(gulp.dest('dist'))
 })
 
