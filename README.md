@@ -2,6 +2,9 @@
 Notify about errors from gulp plugins and streams
 
 ## Install
+```shell
+npm install --save-dev gulp-error-notifier
+```
 
 ## Usage
 
