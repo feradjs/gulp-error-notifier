@@ -35,6 +35,8 @@ notify(new Error('Something happened!'));
 
 ### errorNotifier.handleError(stream)
 Notifies on `stream` `'error'` event and stops it from further executing.
+
+To be used with [SASS] and [Browserify].
 ```javascript
 var gulp = require('gulp');
 var errorNotifier = require('gulp-error-notifier')
@@ -63,5 +65,8 @@ gulp example # run specific example
 
 [plumber]: https://github.com/floatdrop/gulp-plumber
 [plumber-handler]: https://github.com/floatdrop/gulp-plumber#optionserrorhandler
+
+[sass]: https://github.com/dlmanning/gulp-sass
+[browserify]: http://browserify.org/
 
 [example-gulpfile]: https://github.com/feradjs/gulp-error-notifier/blob/master/examples/gulpfile.babel.js
