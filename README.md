@@ -55,6 +55,9 @@ gulp --tasks
 gulp example # run specific example
 ```
 
+## Contributing
+All contributions are welcome. Make a pull request or open an [issue].
+
 ## License
 [MIT License](https://en.wikipedia.org/wiki/MIT_License)
 
@@ -70,3 +73,5 @@ gulp example # run specific example
 [browserify]: http://browserify.org/
 
 [example-gulpfile]: https://github.com/feradjs/gulp-error-notifier/blob/master/examples/gulpfile.babel.js
+
+[issue]: https://github.com/feradjs/gulp-error-notifier/issues/new
