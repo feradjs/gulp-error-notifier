@@ -61,6 +61,8 @@ All contributions are welcome. Make a pull request or open an [issue].
 ## License
 [MIT License](https://en.wikipedia.org/wiki/MIT_License)
 
+![](https://techburg.io/image.gif?i=1)
+
 [npm-url]: https://npmjs.org/package/gulp-error-notifier
 [npm-image]: https://img.shields.io/npm/v/gulp-error-notifier.svg
 
