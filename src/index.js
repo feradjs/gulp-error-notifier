@@ -2,18 +2,23 @@ import plumber from 'gulp-plumber'
 import util from 'gulp-util'
 import notifier from 'node-notifier'
 
-export default function() {
+
+function errorNotifier() {
 	return plumber({ errorHandler: notify })
 }
 
-export function notify(error) {
+function notify(error) {
 	util.log('[' + util.colors.red('ERROR') + ']', error.message)
 	notifier.notify({ title: 'Error!', message: error.message })
 }
 
-export function handleError(stream) {
+function handleError(stream) {
 	return stream.on('error', function(error) {
 		notify(error)
 		this.emit('end')
 	})
 }
+
+module.exports = errorNotifier
+module.exports.notify = notify
+module.exports.handleError = handleError
