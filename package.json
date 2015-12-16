@@ -2,11 +2,9 @@
   "name": "gulp-error-notifier",
   "version": "1.1.0",
   "description": "Notify about errors from gulp plugins and streams",
-  "repository": "feradjs/gulp-error-notifier",
-  "bugs": {
-    "url": "https://github.com/feradjs/gulp-error-notifier/issues"
-  },
   "homepage": "https://github.com/feradjs/gulp-error-notifier",
+  "repository": "feradjs/gulp-error-notifier",
+  "bugs": "https://github.com/feradjs/gulp-error-notifier/issues",
   "author": {
     "name": "Taras Serdyuk",
     "email": "taras@techburg.io",
